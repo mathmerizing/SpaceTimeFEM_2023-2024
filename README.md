@@ -51,7 +51,7 @@ Try to find ways to speed up the code from Exercise 3.
 
 ## Exercise 4
 
-Solve the nonlinear heat equation
+1) Solve the nonlinear heat equation
 
 $$
 \partial_t u - \partial_{xx} u + u^2 = f
@@ -60,4 +60,21 @@ $$
 with tensor-product space-time FEM in FEniCS. 
 Time integration is performed with SymPy and the spatial FEM (incl. automatic differentiation) is done in FEniCS.
 
-Presentation of topics for group projects
+2) Solve the time-dependent Navier-Stokes equations
+
+$$
+ \partial_t v - \nabla_x \cdot \sigma  + (v \cdot \nabla_x)v  = 0, 
+$$
+
+$$
+\nabla_x \cdot v = 0,
+$$
+
+$$
+\sigma = \sigma \begin{pmatrix} v \\ 
+  p \end{pmatrix} = -pI + \nu \nabla_x v,
+$$
+
+with tensor-product space-time FEM in FEniCS.
+
+3) Presentation of topics for group projects
